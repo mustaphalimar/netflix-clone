@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap");
+.profile {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #111;
+  padding: 20px 0;
+}
+
+.profile__main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.profile__userInfo {
+  width: 60%;
+  min-height: 70vh;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.profile__avatarInfo {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.profile__avatar {
+  width: 200px !important;
+  height: 200px !important;
+  font-size: 60px !important;
+  font-family: "RocknRoll One", sans-serif;
+  display: flex;
+  font-weight: bold;
+}
+
+.profile__username {
+  color: white;
+  font-family: "RocknRoll One", sans-serif;
+  margin-top: 10px;
+}
+
+.email {
+  color: rgba(255, 255, 255, 0.678);
+}
+
+.profile__updateInfo > p {
+  margin-top: 15px;
+  color: rgb(192, 192, 192);
+  font-family: "RocknRoll One", sans-serif;
+  font-size: 14px;
+}
+.profile__updateField {
+  display: flex;
+  margin: 10px;
+  padding: 5px;
+}
+
+.profile__updateField input {
+  border: 1px solid rgb(63, 63, 63);
+  background: rgb(44, 44, 44);
+  color: white;
+  outline: none;
+  font-size: 20px;
+  padding: 0 10px;
+  border-radius: 8px;
+  height: 45px;
+}
+
+.profile__updateBtn {
+  width: 60%;
+  border: none;
+  padding: 10px 0;
+  margin-top: 20px;
+  margin-left: 30px;
+  color: white;
+  background-color: green;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.profile__updateBtn:hover {
+  background-color: rgb(3, 109, 3);
+}
+.profile__favorite {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+.profile__favTitle {
+  color: white;
+  text-align: center;
+}
+
+.profile__favorites {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  max-width: 100%;
+}
+.profile__favorites::-webkit-scrollbar {
+  display: none;
+}
+.row__posterLarge {
+  height: 300px;
+}
+.row__movie {
+  min-width: 200px;
+  min-height: 400px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.row__title {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  margin-top: 10px;
+  text-align: center;
+  transition: color 300ms ease;
+  color: rgb(231, 231, 231);
+}
+.favTitle {
+  font-size: 22px;
+}
+.row__title span {
+  font-size: 15px;
+  opacity: 0.4;
+}
+
+.row__title:hover {
+  color: rgb(182, 182, 182);
+}
+
+.row__addedDate {
+  color: white;
+  margin-top: 10px;
+  opacity: 0.4;
+}
+
+.profile__favorites > p {
+  color: rgb(163, 163, 163);
+  margin-top: 20px;
+  text-align: center;
+}
+.row__poster {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.row__poster button {
+  height: 50px;
+  background: none;
+  border: none;
+}
+
+.row__posterDelete {
+  color: red;
+  background-color: rgb(216, 216, 216) !important;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease !important;
+}
+.row__posterDelete:hover {
+  transform: scale(1.08) !important;
+}
+
+@media all and (max-width: 500px) {
+  .profile__updateField input {
+    width: 200px;
+    font-size: 17px;
+    padding: 0 10px;
+    height: 40px;
+  }
+}

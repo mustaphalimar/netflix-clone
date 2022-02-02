@@ -1,0 +1,116 @@
+.header {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+  background-image: linear-gradient(
+    360deg,
+    transparent,
+    rgba(37, 37, 37, 0.61),
+    #111
+  );
+  z-index: 10;
+}
+.header__logo {
+  width: 140px;
+  margin: 10px 30px;
+}
+
+.header__signout {
+  background-color: var(--netflix-main-color) !important;
+  padding: 4px 10px !important;
+  color: white !important;
+  border: none !important;
+  font-weight: 600 !important;
+  border-radius: 5px !important;
+  cursor: pointer !important;
+  transition: all 0.3s ease !important;
+  margin-right: 20px !important;
+  outline: none !important;
+}
+
+.header__signout:hover {
+  background-color: var(--netflix-main-hover-color) !important;
+}
+
+.header__buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 60px;
+}
+
+.header__link {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+.header__link > p {
+  font-size: 13px;
+}
+
+.header__avatar {
+  cursor: pointer;
+}
+.header__username {
+  color: rgb(197, 196, 196);
+  margin-left: 10px;
+  padding-bottom: 4px;
+  cursor: pointer;
+  border-bottom: 1px solid lightgrey;
+}
+
+@media all and (max-width: 685px) {
+  .header__buttons {
+    margin-right: 40px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .header__logo {
+    width: 120px;
+    margin: 5px 20px;
+  }
+  .header__buttons {
+    margin-right: 25px;
+  }
+  .header__signout {
+    padding: 4px 6px !important;
+    margin-right: 10px !important;
+    font-size: 14px;
+  }
+}
+@media all and (max-width: 450px) {
+  .header {
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .header__username {
+    font-size: 20px;
+  }
+  .header__link p {
+    display: none;
+  }
+  .header__buttons {
+    margin: 0;
+  }
+}
+
+@media all and (max-width: 370px) {
+  .header__buttons {
+    margin-right: 15px;
+  }
+  .header__signout {
+    padding: 4px 6px !important;
+    margin-right: 8px !important;
+    font-size: 8px;
+  }
+}

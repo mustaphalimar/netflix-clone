@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap");
+.details {
+  padding-bottom: 30px;
+}
+.details__header {
+  color: white;
+  margin-top: -130px;
+  padding: 0 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.details__nameDate {
+  display: flex;
+  align-items: center;
+}
+.details__nameDate > h2 {
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.details__originalName {
+  font-size: 50px;
+  letter-spacing: 3px;
+  font-family: "RocknRoll One", sans-serif;
+  font-weight: bold;
+}
+
+.details__icon {
+  margin-left: 15px;
+  cursor: pointer;
+  background-color: #032541;
+  padding: 8px;
+  border: 0.5px solid rgba(160, 160, 160, 0.4);
+  border-radius: 50%;
+  opacity: 0.5;
+  transition: all 0.3s ease !important;
+}
+.details__icon:hover {
+  opacity: 1;
+}
+
+.details__voteDetails {
+  display: flex;
+  align-items: center;
+}
+
+.details__voteImg {
+  width: 50px;
+  object-fit: cover;
+}
+
+.details__voteAverage {
+  display: flex;
+  align-items: center;
+}
+.details__voteAverage > h1 {
+  font-family: "RocknRoll One", sans-serif;
+  margin-left: 20px;
+  font-size: 35px;
+}
+.details__voteAverage > h3 {
+  margin-left: 5px;
+  margin-top: 10px;
+  opacity: 0.7;
+}
+.details__infoTitle {
+  color: rgb(167, 166, 166);
+  font-family: "RocknRoll One", sans-serif;
+  font-size: 20px;
+  padding: 5px;
+  display: flex;
+}
+
+.details__info {
+  padding: 10px;
+  border-radius: 6px;
+  margin: 80px auto;
+  max-width: 95%;
+}
+
+.details__detail {
+  display: flex;
+  align-items: center;
+}
+
+.details__infoDetails {
+  color: rgb(231, 231, 231);
+  font-family: "RocknRoll One", sans-serif;
+  margin-left: 20px;
+  margin-top: 5px;
+}
+
+.details__triller {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.details__tvSeasons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 40px;
+}
+.details__seasons {
+  display: flex;
+  margin-top: 60px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  border: 1px solid rgb(37, 37, 37);
+  border-radius: 8px;
+  padding: 10px;
+}
+.details__seasons::-webkit-scrollbar {
+  display: none;
+}
+.details__seasonsTitle {
+  color: white;
+  font-family: "RocknRoll One", sans-serif;
+}
+.details__season {
+  min-width: 200px;
+  min-height: 300px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.detail__seasonDetail {
+  width: 100%;
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 450ms ease;
+}
+
+.detail__seasonName {
+  color: white;
+  font-weight: 500;
+  font-family: "RocknRoll One", sans-serif;
+  margin-top: 10px;
+}
+
+.detail__seasonDate {
+  font-size: 14px;
+  font-family: "RocknRoll One", sans-serif;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.details__addBtn {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+}

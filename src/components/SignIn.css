@@ -1,0 +1,57 @@
+.signin {
+  display: flex;
+  justify-content: center;
+}
+.signin__mainBox {
+  color: white;
+  width: 400px;
+  height: 500px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+  margin-top: 80px;
+}
+
+.signin__box {
+  margin: 50px 40px;
+}
+.signin__mainBox form {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.signin__mainBox form input {
+  background-color: #333333;
+  border: none;
+  border-radius: 4px;
+  width: 90%;
+  font-size: 17px;
+  padding: 10px;
+  margin-bottom: 20px;
+  outline: none;
+  height: 30px;
+  color: white;
+}
+.signin__mainBox form button {
+  width: 100%;
+  background-color: var(--netflix-main-color);
+  border: none;
+  padding: 10px 0;
+  font-size: 17px;
+  border-radius: 5px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  outline: none;
+}
+
+.signin__mainBox form button:hover {
+  background-color: var(--netflix-main-hover-color);
+}
+
+.signin__box {
+  text-align: center;
+}

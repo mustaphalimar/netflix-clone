@@ -1,0 +1,18 @@
+body {
+  --netflix-main-color: #e50914;
+  --netflix-main-hover-color: #be0b14;
+}
+.app {
+  background: url("http://mppmduse2pmpovwapp.azurewebsites.net/wp-content/uploads/2019/09/netflix-background-9.jpg");
+  width: 100%;
+  height: 100vh;
+  box-shadow: inset 10px 10px 500px 170px#000000;
+  background-position: center;
+  background-size: cover;
+}
+
+@media all and (max-width: 685px) {
+  .app {
+    box-shadow: inset 10px 10px 300px 130px#000000;
+  }
+}

@@ -1,0 +1,89 @@
+.home {
+  color: white;
+  max-width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.home__title {
+  font-size: 50px;
+  width: 70%;
+  text-align: center;
+}
+
+.home__subtitle {
+  font-weight: 400;
+  font-size: 25px;
+  text-align: center;
+}
+
+.home__paragraph {
+  font-weight: 400;
+  margin-top: 35px;
+  text-align: center;
+}
+
+.home__input {
+  position: relative;
+  background-color: white;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+}
+
+.home__inputField {
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  outline: none;
+  width: 500px;
+  flex: 1;
+  margin: 0 10px;
+}
+
+.home__button {
+  background-color: var(--netflix-main-color);
+  font-size: 30px;
+  font-weight: 600;
+  color: white;
+  border: none;
+  transition: all 0.3s ease;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.home__button:hover {
+  background-color: var(--netflix-main-hover-color);
+}
+@media all and (max-width: 685px) {
+  .home__title {
+    font-size: 30px;
+  }
+  .home__subtitle {
+    font-size: 20px;
+  }
+
+  .home__input {
+    flex-direction: column;
+    background: none;
+    align-items: center;
+  }
+  .home__inputField {
+    width: 70%;
+    background: white;
+    padding: 10px 15px;
+  }
+  .home__button {
+    margin-top: 10px;
+    width: 75%;
+    font-size: 25px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .home__button {
+    font-size: 18px;
+  }
+}
