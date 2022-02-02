@@ -5,7 +5,7 @@ import FavoriteIcon from "@material-ui/icons/Favorite";
 import axios from "../axios";
 import { db, auth } from "../firebase";
 
-const API_KEY = "4a341142e78c862528cf762bbd7b17c9";
+const API_KEY = process.env.REACT_APP_TMDB_API_KEY;
 const poster_base_url = "https://image.tmdb.org/t/p/original";
 
 function Details({

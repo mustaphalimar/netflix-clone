@@ -6,7 +6,7 @@ import Banner from "./Banner";
 import Header from "./Header";
 import Details from "./Details";
 
-const API_KEY = "4a341142e78c862528cf762bbd7b17c9";
+const API_KEY = process.env.REACT_APP_TMDB_API_KEY;
 
 function Serie() {
   const [serie, setSerie] = useState();

@@ -1,5 +1,6 @@
-const APIKEY = "4a341142e78c862528cf762bbd7b17c9";
+const APIKEY = process.env.REACT_APP_TMDB_API_KEY;
 
+//git commit -m "refactoring [1] : adding .env file to store api keys as an environment variables"
 const requests = {
   fetchTrending: `/trending/all/week?api_key=${APIKEY}`,
   fetchNetflixOriginals: `/discover/tv?api_key=${APIKEY}&with_networks=213`,
