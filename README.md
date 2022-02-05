@@ -1,3 +1,7 @@
+This is a fun project I built when I was playing with react, it is a Netflix clone, it displays informations about different movies, it also has a full user authentication system powered by firebase. I personally enjoyed working on this one.
+You can take a look at it here : https://netflix-clone-mus.web.app/
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
